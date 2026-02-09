@@ -1,118 +1,100 @@
-# 🚀 ASG Projects Dashboard
+# Brothers - Professional Project Management Dashboard
 
-Infrastructure platform for autonomous agents with transparent pricing and blockchain-based payments.
+A modern, professional-grade project management and kanban board system for team collaboration and task tracking.
 
-## 📊 Projects Overview
+## Features
 
-### ☁️ ASG Agent Cloud
-**MCP-compatible agent infrastructure with x402 payment protocol**
+### 📋 Kanban Board
+- **5-Stage Workflow**: Backlog → Todo → In Progress → Review → Done
+- **Approval System**: Tasks only mark as complete after explicit approval
+- **Priority Levels**: High, Medium, Low with visual indicators
+- **Progress Tracking**: Real-time progress bars for active tasks
+- **Team Assignment**: Track who's working on what
 
-- API Latency: **112ms average** (71-189ms range)
-- Endpoints: 4 validated MCP capabilities
-  - `sandbox_execute` - Execute code in isolated environment
-  - `inference_chat` - Run AI inference
-  - `optify_vram_estimate` - Estimate VRAM requirements
-  - `sandbox_cancel` - Cancel running operations
-- Pricing: $0.01 minimum + per-use charges
-- Network: Solana DevNet with USDC payments
-- Status: ✅ PRODUCTION READY
+### 📊 Projects Management
+- **Active Projects**: Main initiatives and ongoing work
+- **Testing & Prototypes**: Experimental projects and POC work
+- **Progress Visualization**: Beautiful progress bars and status indicators
+- **Metrics Dashboard**: Real-time statistics and KPIs
 
-**Endpoint:** `https://agent.asgcompute.com`
+### 📈 Analytics
+- **Team Velocity**: Sprint capacity metrics
+- **Completion Rate**: Task completion tracking
+- **Cycle Time**: Average time from start to completion
+- **On-Time Delivery**: Schedule adherence tracking
 
-### 🔐 WireGuard VPN
-**Fast, modern VPN tunnel for secure access**
+## Design Highlights
 
-- Protocol: WireGuard (peer-to-peer)
-- Location: fly.io infrastructure
-- Port: 51820 UDP
-- Encryption: ChaCha20 + Poly1305
-- Status: 🔧 CONFIGURED
+- **Dark Professional Theme**: Modern gradient background with glassmorphism
+- **Responsive Grid**: Auto-adjusting columns based on screen size
+- **Real-time Metrics**: Live counting of tasks in each stage
+- **Smooth Animations**: Polished interactions and transitions
+- **Accessible UI**: Clear typography and color coding
 
-### 📊 Marketing Strategy
-**6-month comprehensive positioning plan**
+## Tech Stack
 
-- **Positioning:** "AWS for agents" in the ai.com ecosystem
-- **Target:** Autonomous agents requiring infrastructure autonomy
-- **Key Pillars:**
-  1. Community-first development
-  2. Profitable agents messaging
-  3. Distribution via MCP + integrations
-- **Differentiation:** Transparent pricing, public metrics, agent-friendly UX
-- Status: ✅ STRATEGY COMPLETE
+- Pure HTML5, CSS3, JavaScript (no dependencies)
+- GitHub Pages hosting
+- Responsive design (mobile-friendly)
 
-### 🔬 API Testing & Audit
-**Comprehensive validation suite**
+## Usage
 
-- 50+ test cases executed
-- 100% pass rate
-- Performance benchmarked against AWS Lambda, OpenAI
-- Error handling validated
-- Rate limiting tested (unlimited concurrent requests)
-- Status: ✅ COMPLETE
+### Switch Tabs
+Click the navigation buttons at the top to switch between:
+- **Kanban**: Task management board
+- **Projects**: Active and test projects
+- **Analytics**: Performance metrics
 
-### ⛓️ Solana Payment Integration
-**Direct blockchain payments with USDC**
+### Move Tasks
+Click the action buttons on each task card to move it through the workflow:
+- **Start Work**: Move from Backlog/Todo to In Progress
+- **Ready**: Move from In Progress to Review
+- **Approve/Reject**: Review stage decisions
 
-- Network: Solana DevNet
-- Token: USDC (SPL standard)
-- Protocol: x402 (Pay-Per-Use specification)
-- Status: ✅ OPERATIONAL
+### Add Tasks
+Click the "+ Add Task" button in any column (implementation in progress)
 
-### ⚙️ Infrastructure
-**Modern DevOps & deployment**
+## Deployment
 
-- Hosting: fly.io (global edge)
-- VCS: GitHub
-- CI/CD: GitHub Actions
-- Monitoring: Real-time metrics
-- Status: ✅ LIVE
+### GitHub Pages (Recommended)
+1. Push to main branch
+2. GitHub Pages auto-deploys from the repository
+3. Access via: `https://yourusername.github.io/brothers/`
 
-## 📈 Key Metrics
+### Local Development
+Simply open `index.html` in a modern web browser.
 
-| Metric | Value |
-|--------|-------|
-| API Latency | 112ms avg |
-| Uptime | 100% |
-| MCP Endpoints | 4/4 validated |
-| Concurrent Requests | Unlimited |
-| Min Transaction | $0.01 USDC |
-| Pass Rate | 100% |
+## Project Structure
 
-## 🛠️ Tech Stack
+```
+brothers/
+├── index.html      # Main dashboard
+├── README.md       # This file
+└── .gitignore      # Git ignore rules
+```
 
-- **Backend:** Node.js, Solana Web3.js
-- **Payment:** Solana blockchain, x402 protocol
-- **VPN:** WireGuard
-- **Deployment:** fly.io
-- **Testing:** Comprehensive audit suite
-- **Frontend:** Modern HTML5 + CSS3
+## Architecture
 
-## 📋 Quick Links
+The dashboard uses a columnar kanban board with:
+- **Backlog**: Unstarted work items
+- **Todo**: Ready to begin
+- **In Progress**: Active work with progress tracking
+- **Review**: Awaiting approval
+- **Done**: Completed and approved tasks
 
-- **ASG Endpoint:** https://agent.asgcompute.com
-- **Documentation:** [See API docs]
-- **GitHub:** [Repository]
-- **Dashboard:** https://asg-projects.pages.dev/
+## Future Enhancements
 
-## 🎯 Next Steps
+- Task persistence (localStorage or backend)
+- User authentication
+- Real-time collaboration
+- Custom fields and templates
+- Advanced filtering and search
+- Export and reporting
 
-1. ✅ ASG API full audit complete
-2. 🔄 WireGuard port exposure (fly.toml update)
-3. 🚀 Dashboard deployment to GitHub Pages
-4. 📢 Begin marketing rollout
-5. 🤝 Launch ai.com ecosystem integrations
+## Support
 
-## 📝 Team
-
-- **Aidar** - Project Lead
-- **Gogibot** - Infrastructure & Testing
-
-## 📄 License
-
-MIT - Open for community contribution
+For issues or suggestions, reach out to the team.
 
 ---
 
-**Built with ❤️ for the future of autonomous agent infrastructure**
-
-Last Updated: February 9, 2026
+Built with ❤️ for efficient project management.
